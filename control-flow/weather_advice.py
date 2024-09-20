@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
 
 if weather == "sunny" :
@@ -11,3 +12,6 @@ else:
 
 
                  
+=======
+
+>>>>>>> bf2fbec69c6b44eb44f45d719ab088d6905a95f7
