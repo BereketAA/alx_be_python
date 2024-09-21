@@ -4,16 +4,19 @@ operation = input("Choose the operation (+, -, *, /): ")
 #def opertaion(value):
 match operation:
         case '-':
-            result = f"The answer is = {num1 - num2}"
+           result = num1 - num2
+           print(f"The result is {result}")
         case '+':
-            result = f"The answer is = {num1 + num2}"
+            result = num1 + num2
+            print(f"The result is {result}")
         case '*':
-           result = f"The answer is = {num1 * num2}"
+           result = num1 * num2
+           print(f"The result is {result}")
         case '/':
             if num2 != 0:
-               result = f"The answer is = {num1 / num2}"
+               result = num1 / num2
+               print(f"The result is {result}")
             else:
                 print( "Error: Cannot divide by zero")
         case '_':
            result = "Invalid operation selected."
-print(result)
