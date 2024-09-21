@@ -12,11 +12,11 @@ match priority:
     case 'high':
         priority_message = "a high priority task"
     case 'medium':
-        priority_message = "a medium priority task."
+        priority_message = "a medium priority task"
     case 'low':
-        priority_message = "a low priority task."
+        priority_message = "a low priority task"
     case _:
-        priority_message = "an invalid priority task."
+        priority_message = "an invalid priority task"
 
 # Modify the reminder if the task is time-bound
 if time_bound == 'yes':
