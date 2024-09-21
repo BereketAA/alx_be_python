@@ -14,7 +14,7 @@ match priority:
     case 'medium':
         priority_message = "a medium priority task"
     case 'low':
-        priority_message = "a low priority task"
+        priority_message = "a low priority task."
     case _:
         priority_message = "an invalid priority task"
 
