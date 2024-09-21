@@ -2,8 +2,8 @@
 size = int(input("Enter the size of the  pattern: "))
 # Ensure the user entered a positive integer
 while size <= 0:
-    print("Please enter a positive integer.")
-    size = int(input("Enter a positive integer for the size of the square pattern: "))
+    #print("Enter the size of the  pattern.")
+    size = int(input("Enter the size of the  pattern: "))
 
 # Use nested loops to print the square pattern
 for i in range(size):
