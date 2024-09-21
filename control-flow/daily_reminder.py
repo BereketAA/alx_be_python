@@ -11,20 +11,21 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 match priority:
     case 'high':
         priority_message = "a high priority task"
+        reminder_label = "Reminder"
     case 'medium':
         priority_message = "a medium priority task"
+        reminder_label = "Reminder"
     case 'low':
         priority_message = "a low priority task."
+        reminder_label = "Note"
     case _:
         priority_message = "an invalid priority task"
 
 # Modify the reminder if the task is time-bound
 if time_bound == 'yes':
-    reminder_label = "Reminder"
     time_message = "that requires immediate attention today!"
     
 else:
-    reminder_label = "Note"
     time_message = "Consider completing it when you have free time."
     
 
