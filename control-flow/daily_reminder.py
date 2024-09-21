@@ -9,7 +9,7 @@ time_bound = input("Is it time-bound? (yes/no):").lower()
 
 #initialize reminder
 if time_bound == "yes":
-    reminder = f"Reminder: '{task}' is a "
+    reminder = f"Reminder:'{task}' is a "
 else:
     reminder = f"Note:'{task}' is a "
 # Use Match Case to react based on task priority
