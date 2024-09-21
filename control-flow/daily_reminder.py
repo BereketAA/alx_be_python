@@ -1,11 +1,11 @@
 # Ask the user to input a task description
-task = input("Enter your task: ")
+task = input("Enter your task:")
 
 # Prompt for the task's priority (high, medium, low)
-priority = input("Priority (high/medium/low): ").lower()
+priority = input("Priority (high/medium/low):").lower()
 
 # Ask if the task is time-bound (yes or no)
-time_bound = input("Is it time-bound? (yes/no): ").lower()
+time_bound = input("Is it time-bound? (yes/no):").lower()
 
 # Use Match Case to react based on task priority
 match priority:
@@ -16,16 +16,16 @@ match priority:
         priority_message = "a medium priority task"
         #reminder_label = "Reminder"
     case 'low':
-        priority_message = "a low priority task."
+        priority_message = "a low priority task"
         #reminder_label = "Note"
     case _:
         priority_message = "an invalid priority task"
 
 # Modify the reminder if the task is time-bound
 if time_bound == "yes" or priority == "high":
-    print(f"\nReminder:'{task}' is {priority_message} that requires immediate attention today!")
-elif time_bound == "no":
-    print(f"\nNote:'{task}' is {priority_message} Consider completing it when you have free time.")
+    print(f"\nReminder: '{task}' is {priority_message} that requires immediate attention today!")
+else:
+    print(f"\nNote: '{task}' is {priority_message}. Consider completing it when you have free time.")
 
     
 
