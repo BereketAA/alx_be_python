@@ -24,11 +24,11 @@ match priority:
         reminder += "low priority task"
         #reminder_label = "Note"
     case _:
-        reminder += "invalid priority task"
+        reminder += "invalid priority task."
 
 # Modify the reminder if the task is time-bound
 if time_bound == "yes":
-   reminder += "that requires immediate attention today!"
+   reminder += " that requires immediate attention today!"
 else:
     reminder += ". Consider completing it when you have free time."
 
