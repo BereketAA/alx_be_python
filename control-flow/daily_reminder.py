@@ -20,11 +20,13 @@ match priority:
 
 # Modify the reminder if the task is time-bound
 if time_bound == 'yes':
-    time_message = "that requires immediate attention today!"
     reminder_label = "Reminder"
+    time_message = "that requires immediate attention today!"
+    
 else:
-    time_message = "Consider completing it when you have free time."
     reminder_label = "Note"
+    time_message = "Consider completing it when you have free time."
+    
 
 # Print the final reminder
 print(f"\n{reminder_label}: '{task}' is {priority_message} {time_message}")
