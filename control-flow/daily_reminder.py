@@ -21,8 +21,10 @@ match priority:
 # Modify the reminder if the task is time-bound
 if time_bound == 'yes':
     time_message = "that requires immediate attention today!"
+    reminder_label = "Reminder"
 else:
     time_message = "Consider completing it when you have free time."
+    reminder_label = "Note"
 
 # Print the final reminder
-print(f"\nReminder: '{task}' is {priority_message} {time_message}")
+print(f"\n{reminder_label}: '{task}' is {priority_message} {time_message}")
