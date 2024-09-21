@@ -30,4 +30,4 @@ else:
     
 
 # Print the final reminder
-print(f"\n{reminder_label}: '{task}' is {priority_message} {time_message}")
+print(f"\n{reminder_label}:'{task}' is {priority_message} {time_message}")
