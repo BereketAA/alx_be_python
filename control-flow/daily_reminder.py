@@ -24,7 +24,7 @@ match priority:
 # Modify the reminder if the task is time-bound
 if time_bound == "yes" or priority == "high":
     print(f"\nReminder: '{task}' is {priority_message} that requires immediate attention today!")
-else:
+elif time_bound == "no":
     print(f"\nNote: '{task}' is {priority_message}. Consider completing it when you have free time.")
 
     
