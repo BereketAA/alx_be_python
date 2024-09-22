@@ -8,30 +8,31 @@ priority = input("Priority (high/medium/low):").lower()
 time_bound = input("Is it time-bound? (yes/no):").lower()
 
 #initialize reminder
+
 if time_bound == "yes":
-    reminder = f"Reminder:'{task}' is a "
+    reminder = "Reminder:"
 else:
-    reminder = f"Note:'{task}' is a "
+    reminder = "Note:"
 # Use Match Case to react based on task priority
 match priority:
     case 'high':
-        reminder += "high priority task"
+        reminder += f"'{task}' is a high priority task"
         #reminder_label = "Reminder"
     case 'medium':
-        reminder += "medium priority task"
+        reminder += f"'{task}' is a medium priority task"
         #reminder_label = "Reminder"
     case 'low':
-        reminder += "low priority task"
+        reminder += f"'{task}' is a low priority task"
         #reminder_label = "Note"
     case _:
         reminder += "invalid priority task."
 
 # Modify the reminder if the task is time-bound
 if time_bound == "yes":
-   reminder += " that requires immediate attention today!"
+    print(f"{reminder} that requires immediate attention today!")
 else:
-    reminder += ". Consider completing it when you have free time."
+    print(f"{reminder}. Consider completing it when you have free time.")
 
     
 # Print the final reminder
-print(reminder)
+#print(reminder)
