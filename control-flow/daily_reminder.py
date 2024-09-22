@@ -10,9 +10,9 @@ time_bound = input("Is it time-bound? (yes/no):").lower()
 #initialize reminder
 
 if time_bound == "yes":
-    reminder = "Reminder:"
+    reminder = " "
 else:
-    reminder = "Note:"
+    reminder = " "
 # Use Match Case to react based on task priority
 match priority:
     case 'high':
@@ -29,10 +29,11 @@ match priority:
 
 # Modify the reminder if the task is time-bound
 if time_bound == "yes":
-    print(f"{reminder} that requires immediate attention today!")
+    reminder += "that requires immediate attention today!"
 else:
-    print(f"{reminder}. Consider completing it when you have free time.")
+    reminder += ". Consider completing it when you have free time."
 
     
 # Print the final reminder
 #print(reminder)
+print(f"Reminder:{reminder}")
