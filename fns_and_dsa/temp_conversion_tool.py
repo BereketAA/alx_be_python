@@ -21,16 +21,16 @@ def main():
         temperature_input = float(input("Enter the temperature to convert: ").strip())
         #temperature = float(temperature_input)
         #temp_type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
-        temperature = float(temperature_input)
+        #temperature = float(temperature_input)
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
         match unit:
             case 'F':
-                celsius = convert_to_celsius(temperature)
-                print(f"{temperature}°F is {celsius}°C")
+                celsius = convert_to_celsius(temperature_input)
+                print(f"{temperature_input}°F is {celsius}°C")
             case 'C':
-                fahrenheit = convert_to_fahrenheit(temperature)
-                print(f"{temperature}°C is {fahrenheit}°F")
+                fahrenheit = convert_to_fahrenheit(temperature_input)
+                print(f"{temperature_input}°C is {fahrenheit}°F")
             case _:
                 print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError:
