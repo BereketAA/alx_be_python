@@ -15,20 +15,24 @@ def main():
     """Main function to demonstrate temperature conversion."""
     # print("Temperature Conversion Tool")
 
-    temperature_input = input("Enter the temperature to convert: ").strip()
+    
 
     try:
+        temperature_input = float(input("Enter the temperature to convert: ").strip())
+        #temperature = float(temperature_input)
+        #temp_type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
         temperature = float(temperature_input)
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
-        if unit == 'F':
-            celsius = convert_to_celsius(temperature)
-            print(f"{temperature}°F is {celsius}°C")
-        elif unit == 'C':
-            fahrenheit = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is {fahrenheit}°F")
-        else:
-            print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+        match unit:
+            case 'F':
+                celsius = convert_to_celsius(temperature)
+                print(f"{temperature}°F is {celsius}°C")
+            case 'C':
+                fahrenheit = convert_to_fahrenheit(temperature)
+                print(f"{temperature}°C is {fahrenheit}°F")
+            case _:
+                print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
     except ValueError:
         print("Invalid temperature. Please enter a numeric value.")
 
